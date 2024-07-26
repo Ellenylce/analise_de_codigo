@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-.slideshow-container {  /* seta o contêiner principal do 'slideshow'.*/
+.slideshow-container {  /* estilizar o contêiner principal do 'slideshow'.*/
     max-width: 1000px; /* É definida a largura máxima do contêiner como 1000 pixels*/
     position: relative; /*É definida a posição como 'relativa'. Desta forma os elementos filhos com 'position: absolute' podem ser posicionados em relação a este contêiner.*/
     margin: auto; /* Posiciona o container no centro da página.*/
@@ -16,7 +16,7 @@
 /*Estiliza (anterior e próximo)*/
 .anterior,
 .proximo {
-    cursor: pointer; /*Altera o cursor para uma mão ao passar sobre o botão*/
+    cursor: pointer; /*Altera o cursor para uma mão*/
     position: absolute; /*é posicionado de forma absoluta em relação ao contêiner pai (slideshow-container).*/
     top: 50%; /*é posicionado verticalmente no meio do contêiner.*/
     width: auto; /*A largura é ajustada automaticamente com base no conteúdo*/
@@ -30,18 +30,18 @@
     user-select: none; /*controla se o usuário pode selecionar o texto, neste caso o usuário não pode selecionar o texto*/
 }
 
-.proximo { /*seta 'próximo' para estilizar"*/
-    right: 0; /*Posiciona o botão à direita do contêiner*/
+.proximo { /*estiliza '.próximo'"*/
+    right: 0; /*Posiciona à direita do contêiner*/
     border-radius: 3px 0 0 3px; /*põe borda, arredondando apenas os cantos esquerdos*/
 }
 
-/* aplica hover na classe: anterior e próximo - Altera a cor de fundo quando o mouse passa sobre eles, adicionando um fundo preto com 80% de opacidade (0.8). */
+/* Quando o mouse é passado sobre .anterior e .proximo os mesmos são estilizados - Altera a cor de fundo quando o mouse passa sobre eles, adicionando um fundo preto com 80% de opacidade (0.8). */
 .anterior:hover,
 .proximo:hover {
     background-color: rgba(0, 0, 0, 0.8); 
 }
 
-/*seta a classe 'text' para estilizá-la*/
+/*.text é estilizada*/
 .text {
     color: #f2f2f2; /*Define a cor*/
     font-size: 15px; /*Define o tamanho da fonte*/
@@ -52,7 +52,7 @@
     text-align: center; /*Centraliza o texto horizontalmente.*/
 }
 
-/*Estiliza a "class-numbertest"(o texto que mostra o número do slide atual e o total)*/
+/*Estiliza a ".numbertest"(o texto que mostra o número do slide atual e o total)*/
 .numbertext {
     color: #f2f2f2; /*Define a cor*/
     font-size: 12px; /*tamanho da fonte*/
@@ -61,7 +61,7 @@
     top: 0; /* é posicionado ao topo */
 }
 
-/* Estiliza a class- ponto (define a aparência dos pontos de navegação que indicam a posição do slide)*/
+/* Estiliza .ponto (define a aparência dos pontos de navegação que indicam a posição do slide)*/
 .ponto {
     cursor: pointer; /*altera o cursor para uma mão ao passar o curso ao ponto*/
     height: 15px; /*define a altura do ponto*/
