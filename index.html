@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="slideshow-container"> 
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="imgs/gato.jpg" style="width:100%">
+            <div class="text">Gato</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="imgs/dog.jpg" style="width:100%">
+            <div class="text">Cachorro</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="imgs/pato.jpg" style="width:100%">
+            <div class="text">Pato</div>
+        </div>
+
+        <a class="anterior" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="proximo" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="ponto" onclick="currentSlide(1)"></span>
+        <span class="ponto" onclick="currentSlide(2)"></span>
+        <span class="ponto" onclick="currentSlide(3)"></span>
+    </div>
+
+</body>
+
+</html>
